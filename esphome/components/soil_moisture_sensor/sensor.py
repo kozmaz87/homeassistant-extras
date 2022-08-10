@@ -8,7 +8,7 @@ soil_moisture_sensor_ns = cg.esphome_ns.namespace('soil_moisture_sensor')
 
 SoilMoistureSensor = soil_moisture_sensor_ns.class_('SoilMoistureSensor', cg.PollingComponent)
 
-CONFIG_SCHEMA = sensor.sensor_schema(UNIT_EMPTY, ICON_EMPTY, 1).extend({
+CONFIG_SCHEMA = sensor.sensor_schema(unit_of_measurement=UNIT_EMPTY, accuracy_decimals=2).extend({
     cv.GenerateID(): cv.declare_id(SoilMoistureSensor)
 }).extend(cv.polling_component_schema('60s'))
 
