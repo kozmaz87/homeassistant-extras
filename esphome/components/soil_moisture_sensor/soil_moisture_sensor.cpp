@@ -11,7 +11,6 @@ void SoilMoistureSensor::setup() {
 }
 
 void SoilMoistureSensor::loop() {
-    ESP_LOGD(TAG, "Got soil moisture reading: %.2f", 0.52);
 }
 
 void SoilMoistureSensor::update() {
