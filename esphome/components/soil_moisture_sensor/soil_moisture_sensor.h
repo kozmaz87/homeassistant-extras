@@ -7,6 +7,7 @@ namespace esphome {
 namespace soil_moisture_sensor {
 
 class SoilMoistureSensor : public sensor::Sensor, public PollingComponent {
+    int loop_counter = 0;
     void setup() override;
     void loop() override;
     void update() override;
