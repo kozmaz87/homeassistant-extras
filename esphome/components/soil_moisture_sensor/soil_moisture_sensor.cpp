@@ -12,9 +12,9 @@ void SoilMoistureSensor::setup() {
 
 void SoilMoistureSensor::loop() {
     // ESP_LOGD(TAG, "Got soil moisture reading: %.2f", 0.52);
-    this.loop_counter++;
-    if(this.loop_counter % 10000 == 0) {
-        ESP_LOGD(TAG, "Got soil moisture reading: %.2f", double(this.loop_counter));
+    this->loop_counter++;
+    if(this->loop_counter % 10000 == 0) {
+        ESP_LOGD(TAG, "Got soil moisture reading: %.2f", double(this->loop_counter));
     }
 }
 
